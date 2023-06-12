@@ -5,7 +5,8 @@ let numberOfDrumButtons = document.querySelectorAll(".drum").length;
 for (var i = 0; i < numberOfDrumButtons; i++) {
   document.querySelectorAll(".drum")[i].addEventListener("click", function () {
     var buttonInnerHTML = this.innerHTML;
-    makeSound(buttonInnerHTML);  
+    makeSound(buttonInnerHTML); // detect the word in the keyboard and put in the fuction where the play sound wich I declarete 
+    buttonAnimation(buttonInnerHTML); // detec the word and do and animation 
   });
 }
 
@@ -50,4 +51,8 @@ function makeSound(key) {
 
     default: console.log(buttonInnerHTML);
   }
+}
+
+function buttonAnimation(currentkey){
+  
 }
